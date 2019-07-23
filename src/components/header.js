@@ -76,6 +76,11 @@ const Header = ({ siteTitle, siteDescription }) => (
   </TitleSection>
 )
 
+ContactLink.prototypes = {
+  link: PropTypes.string,
+  icon: PropTypes.string
+}
+
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }

@@ -20,14 +20,11 @@ const TitleSection = styled.div`
 `
 const StyledDescription = styled.div`
   font-size: 1.5rem;
-  padding-top: 3%;
-  padding-bottom: 2%;
+  padding-top: 5%;
+  padding-bottom: 3%;
   color: #4d8a76;
   line-height: 1.25rem;
 
-  &:hover {
-    font-size: 1.25rem;
-  }
 `
 
 const StyledLogo = styled(FontAwesomeIcon)`
@@ -43,7 +40,7 @@ const SocialSection = styled.div`
   display: flex;
 `
 const StyledSocial = styled.div`
-  padding-right: 1%;
+  padding-right: 3%;
   padding-left: 1%;
 `
 

@@ -10,7 +10,6 @@ import styled from "styled-components"
 const InfoContainer = styled.span`
   display: flex;
   padding: 15%;
-
 `
 
 const Layout = ({ children }) => {

@@ -5,6 +5,13 @@ import Header from "./header"
 import "./layout.css"
 import GlobalStyle from "../styles/GlobalStyle"
 import Bio from "./bio"
+import styled from "styled-components"
+
+const InfoContainer = styled.span`
+  display: flex;
+  padding: 15%;
+
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -21,8 +28,10 @@ const Layout = ({ children }) => {
   return (
     <>
     <GlobalStyle/>
-    <Header siteTitle={data.site.siteMetadata.title} siteDescription={data.site.siteMetadata.description} />
-    <Bio></Bio>
+    <InfoContainer> 
+      <Header siteTitle={data.site.siteMetadata.title} siteDescription={data.site.siteMetadata.description} />
+      <Bio/>
+    </InfoContainer>
     </>
   )
 }

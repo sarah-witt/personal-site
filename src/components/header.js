@@ -17,7 +17,6 @@ const StyledHeader = styled.div`
 const TitleSection = styled.div`
   font-family: Verdana, Geneva, sans-serif;
   font-weight: bold; 
-  padding: 15%;
 `
 const StyledDescription = styled.div`
   font-size: 1.5rem;

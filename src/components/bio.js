@@ -19,7 +19,7 @@ const LineContainer = styled.div`
 const Line1 = styled.div`
   width: 100px;
   height: 50px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #fff0b5;
   position: absoute;
 
   content:"";
@@ -30,7 +30,7 @@ const Line1 = styled.div`
 const Line2 = styled.div`
   width: 100px;
   height: 50px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #fff0b5;
   position: absoute;
 
   content:"";
@@ -39,16 +39,25 @@ const Line2 = styled.div`
 `
 
 const Line3 = styled.div`
-  width: 100px;
-  height: 50px;
-  border-bottom: 1px solid black;
-
+  width: 80px;
+  height: 38px;
+  border-bottom: 2px solid #fff0b5;
 `
 
 const LineAndInfo = styled.div`
   position: absolute;
   display: flex;
   flex-direction: row;
+`
+
+const LinePadding2 = styled.div`
+  width: 65px;
+  height: 50px;
+`
+
+const LinePadding3 = styled.div`
+  width: 33px;
+  height: 50px;
 `
 
 const Bio = () => {
@@ -59,10 +68,12 @@ const Bio = () => {
         <BioInfo>computer science student</BioInfo>
       </LineAndInfo>
       <LineAndInfo>
+        <LinePadding2/>
         <Line2/>
         <BioInfo>northeastern university</BioInfo>
       </LineAndInfo>
       <LineAndInfo>
+        <LinePadding3/>
         <Line3/>
         <BioInfo>boston, ma</BioInfo>
       </LineAndInfo>

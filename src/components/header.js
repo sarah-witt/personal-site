@@ -17,7 +17,6 @@ const StyledHeader = styled.div`
 const TitleSection = styled.div`
   font-family: Verdana, Geneva, sans-serif;
   font-weight: bold; 
-  text-align: center;
   padding: 15%;
 `
 const StyledDescription = styled.div`
@@ -43,7 +42,6 @@ const StyledLogo = styled(FontAwesomeIcon)`
 
 const SocialSection = styled.div`
   display: flex;
-  justify-content: center;
 `
 const StyledSocial = styled.div`
   padding-right: 1%;

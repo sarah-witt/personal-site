@@ -8,14 +8,11 @@ const BioContainer = styled.div`
 `
 
 const BioInfo = styled.li`
-`
-
-const BioSectionList = styled.ul`
+  padding-bottom: 10%;
 `
 
 const LineContainer = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
 `
 
@@ -48,19 +45,27 @@ const Line3 = styled.div`
 
 `
 
+const LineAndInfo = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+`
+
 const Bio = () => {
   return (
     <BioContainer>
-      <LineContainer> 
-        <Line1></Line1>
-        <Line3></Line3>
-        <Line2></Line2>
-      </LineContainer>
-      <BioSectionList>
+      <LineAndInfo> 
+        <Line1/>
         <BioInfo>computer science student</BioInfo>
+      </LineAndInfo>
+      <LineAndInfo>
+        <Line2/>
         <BioInfo>northeastern university</BioInfo>
+      </LineAndInfo>
+      <LineAndInfo>
+        <Line3/>
         <BioInfo>boston, ma</BioInfo>
-      </BioSectionList>
+      </LineAndInfo>
     </BioContainer>
   )
 }

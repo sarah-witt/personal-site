@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
@@ -8,60 +7,45 @@ const BioContainer = styled.div`
 `
 
 const BioInfo = styled.li`
+  color: #4d8a76;
+  font-size: 1.3rem;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  font-family: Verdana, Geneva, sans-serif;
+
+  &:hover {
+    color: white;
+  }
 `
 
 const BioSectionList = styled.ul`
+  list-style: none;
+  display: inline-block;
 `
 
-const LineContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+const StyledBio = styled.div`
+  padding-left: 3%;
 `
 
-const Line1 = styled.div`
-  width: 100px;
-  height: 50px;
-  border-bottom: 1px solid black;
-  position: absoute;
-
-  content:"";
-  transform: rotate(-40deg);
-  transform-origin: 0% 0%;
-`
-
-const Line2 = styled.div`
-  width: 100px;
-  height: 50px;
-  border-bottom: 1px solid black;
-  position: absoute;
-
-  content:"";
-  transform: rotate(40deg);
-  transform-origin: 0% 0%;
-`
-
-const Line3 = styled.div`
-  width: 100px;
-  height: 50px;
-  border-bottom: 1px solid black;
-
+const VerticalLine = styled.div`
+  width: 1px;
+  background-color: #fff0b5;
+  height: 90%; 
+  float: left;
 `
 
 const Bio = () => {
   return (
+    <StyledBio>
+    <VerticalLine/>
     <BioContainer>
-      <LineContainer> 
-        <Line1></Line1>
-        <Line3></Line3>
-        <Line2></Line2>
-      </LineContainer>
       <BioSectionList>
         <BioInfo>computer science student</BioInfo>
         <BioInfo>northeastern university</BioInfo>
         <BioInfo>boston, ma</BioInfo>
       </BioSectionList>
     </BioContainer>
+    </StyledBio>
   )
 }
 

@@ -14,22 +14,18 @@ const StyledHeader = styled.div`
   font-size: 4rem;
   color: #fff0b5;
 `
+
 const TitleSection = styled.div`
   font-family: Verdana, Geneva, sans-serif;
   font-weight: bold; 
-  text-align: center;
-  padding: 15%;
 `
+
 const StyledDescription = styled.div`
   font-size: 1.5rem;
   padding-top: 3%;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
   color: #4d8a76;
   line-height: 1.25rem;
-
-  &:hover {
-    font-size: 1.25rem;
-  }
 `
 
 const StyledLogo = styled(FontAwesomeIcon)`
@@ -44,10 +40,17 @@ const StyledLogo = styled(FontAwesomeIcon)`
 const SocialSection = styled.div`
   display: flex;
   justify-content: center;
+  padding: 3%;
+
+
+  @media (min-width: 750px) {
+    padding: 0%;
+    justify-content: left;
+  }
 `
+
 const StyledSocial = styled.div`
-  padding-right: 1%;
-  padding-left: 1%;
+  padding-right: 6%;
 `
 
 const ContactLink = ({ link, icon }) => {

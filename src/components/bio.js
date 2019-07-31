@@ -69,22 +69,34 @@ const LinePadding3 = styled.div`
   height: 50px;
 `
 
+const BioInfo1 = styled.div`
+  padding-top: 1%;
+`
+
+const BioInfo2 = styled.div`
+  padding-top: 7%;
+`
+
+const BioInfo3 = styled.div`
+  padding-top: 45%;
+`
+
 const Bio = () => {
   return (
     <BioContainer>
       <LineAndInfo> 
         <Line1/>
-        <BioInfo>computer science student</BioInfo>
+        <BioInfo1>computer science student</BioInfo1>
       </LineAndInfo>
       <LineAndInfo>
         <LinePadding2/>
         <Line2/>
-        <BioInfo>northeastern university</BioInfo>
+        <BioInfo2>northeastern university</BioInfo2>
       </LineAndInfo>
       <LineAndInfo>
         <LinePadding3/>
         <Line3/>
-        <BioInfo>boston, ma</BioInfo>
+        <BioInfo3>boston, ma</BioInfo3>
       </LineAndInfo>
     </BioContainer>
   )

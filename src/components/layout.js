@@ -9,11 +9,11 @@ import Bio from "./bio"
 const InfoContainer = styled.span`
   flex-direction: column;
   display: flex;
-  padding: 15%;
-
+  padding: 3%;
 
   @media (min-width: 750px) {
     flex-direction: row;
+    padding: 15%;
   }
 `
 

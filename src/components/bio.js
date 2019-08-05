@@ -9,8 +9,7 @@ const BioContainer = styled.div`
 const BioInfo = styled.li`
   color: #4d8a76;
   font-size: 1.3rem;
-  padding-bottom: 3%;
-  padding-top: 3%;
+  padding-bottom: 4%;
   font-family: Verdana, Geneva, sans-serif;
 
   &:hover {

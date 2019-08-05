@@ -20,17 +20,9 @@ const TitleSection = styled.div`
   font-weight: bold; 
 `
 
-const StyledDescription = styled.div`
-  font-size: 1.5rem;
-  padding-top: 3%;
-  padding-bottom: 5%;
-  color: #4d8a76;
-  line-height: 1.25rem;
-`
-
 const StyledLogo = styled(FontAwesomeIcon)`
   font-size: 1.5em;
-  color: #fff0b5;
+  color: #4d8a76;
 
   &:hover {
     color: white;
@@ -44,13 +36,13 @@ const SocialSection = styled.div`
 
 
   @media (min-width: 750px) {
-    padding: 0%;
+    padding: 2%;
     justify-content: left;
   }
 `
 
 const StyledSocial = styled.div`
-  padding-right: 6%;
+  padding-right: 5%;
 `
 
 const ContactLink = ({ link, icon }) => {
@@ -68,9 +60,6 @@ const Header = ({ siteTitle, siteDescription }) => (
     <StyledHeader>
       {siteTitle}
     </StyledHeader>
-    <StyledDescription>
-      {siteDescription}
-    </StyledDescription>
     <SocialSection> 
       <ContactLink link={"https://github.com/sarah-witt"} icon={faGithub} ></ContactLink> 
       <ContactLink link={"mailto:witt.s@husky.neu.edu"} icon={faEnvelope} ></ContactLink> 

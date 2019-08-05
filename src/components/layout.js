@@ -13,8 +13,24 @@ const InfoContainer = styled.span`
 
   @media (min-width: 750px) {
     flex-direction: row;
-    padding: 15%;
+    padding-left: 12%;
+    padding-top: 12%;
+
   }
+`
+
+const StyledNote = styled.div`
+  font-size: 1.5rem;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  padding-left: 12%;
+  color: #fff0b5;
+  line-height: 1.25rem;
+`
+
+const NoteContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `
 
 const Layout = ({ children }) => {
@@ -32,10 +48,15 @@ const Layout = ({ children }) => {
   return (
     <>
     <GlobalStyle/>
+    <NoteContainer> 
     <InfoContainer>
       <Header siteTitle={data.site.siteMetadata.title} siteDescription={data.site.siteMetadata.description} />
       <Bio/>
     </InfoContainer>
+    <StyledNote>
+      *site currently under construction*
+    </StyledNote>
+    </NoteContainer>
     </>
   )
 }
